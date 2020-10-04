@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <title>Petty</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">  
+    <link rel="stylesheet" href="../Front-end/asset/css/base.css">
+    <link rel="stylesheet" href="../Front-end/asset/css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="../Front-end/asset/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../Front-end/asset/css/owl.theme.default.min.css">
+</head>
+<body>
+    <!--Header-->
+    <div class="container-fluid">
+        <div class="container" id="petty-header" style="width: 100%; height: 100%;">
+            <div class="logo"></div>
+            <form class="search" action="search.php" method="GET">
+                <input class="txtSearch" type="text" placeholder="Tìm kiếm">
+                <button type="submit" id="btnSearch" onclick="window.location.href = 'search.html';"><i id="search-icon"></i></button>
+            </form>
+            <span><i class="fas fa-bell" style="color: white; position: absolute; right: 334px; font-size: 20px; top: 19px;"></i></span>
+            <div class="user">
+                <span style="color: white; margin-right: 10px;">ecchi123</span>
+                <img class="rounded-circle" src="https://static.wikia.nocookie.net/a3dddab1-5138-4786-ad66-03920667dc3a" style="width: 45px; height: auto; border: 1px solid #ef5030;">
+                <i class="fas fa-caret-down"></i>
+            </div>
+            <div class="cart">
+                <i></i>
+                <span>Giỏ hàng</span>
+            </div>
+        </div>
+    </div>
+    <!--Menu-->
+    <div class="catalog">
+        <div class="item-catalog">Trang chủ</div>
+        <div class="item-catalog">Giới thiệu</div>
+        <div class="item-catalog">Dịch vụ</div>
+        <div class="item-catalog">Liên hệ</div>
+        <div class="item-catalog">Blog</div>
+    </div>
+    <!--User Page-->
+    <div class="userpage-content">
+        <div class="userpage-sidebar">
+            <div class="userpage-brief">
+                <div class="user-avatar"><i class="fas fa-user"></i></div>
+                <div class="userpage-brief-right">Nguyễn Văn A</div>
+            </div>
+            <div class="userpage-sidebar-menu">
+                <div class="sidebar-item" id="account"><i class="fas fa-smile"></i>Tài khoản của tôi</div>
+                <div class="sidebar-item" id="order-history"><i class="fas fa-shopping-bag"></i>Lịch sử mua hàng</div>
+                <div class="sidebar-item" id="wishlist"><i class="fas fa-heart"></i>Yêu thích</div>
+                <div class="sidebar-item" id="comment"><i class="fas fa-edit"></i>Nhận xét</div>
+                <div class="sidebar-item" id="order-tracking"><i class="fas fa-truck"></i>Theo dõi đơn hàng</div>
+                <div class="sidebar-item" id="news"><i class="fas fa-bell"></i>Thông báo của tôi</div>
+                <div class="sidebar-item" id="coupon"><i class="fas fa-bolt"></i></i>Mã giảm giá</div>
+            </div>
+        </div>
+        <div class="user-information">
+            <div class="information-header">Hồ sơ của tôi</div>
+            <form class="fill-information">
+                <div class="form">
+                    <label for="username" class="not-radio">Tên đăng nhập</label><br>
+                    <input type="text" name="username" class="not-radio"><br>
+                    <label for="name" class="not-radio">Tên</label><br>
+                    <input type="text" name="name" class="not-radio"><br>
+                    <label for="email" class="not-radio">Email</label><br>
+                    <input type="email" name="email" class="not-radio"><br>
+                    <label for="mobile" class="not-radio">Số điện thoại</label><br>
+                    <input type="tel" name="mobile" class="not-radio"><br>
+                    <label for="born" class="not-radio">Ngày sinh</label><br>
+                    <input type="date" name="born" class="not-radio"><br>
+                    <input type="radio" name="gender" value="female"><label for="gender">Nữ</label>
+                    <input type="radio" name="gender" value="male"><label for="gender">Nam</label><br>
+                    <button type="submit">Lưu</button>
+                </div>
+                <div class="upload-avatar">
+                    <i class="far fa-images"></i>
+                    <input type="button" value="Chọn ảnh">
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--Footer-->
+    <div class="footer">
+        <div id="petty-logo"></div>
+        <div class="information">
+            <p><i id="mobile"></i>000-000-000</p>
+            <p><i id="email"></i>Email: nnchi@gmail.com</p>
+            <p><i id="address"></i>144, Xuan Thuy, Cau Giay, Ha Noi</p>
+        </div>
+        <div class="media">
+            <p class="media-text">Follow Us</p>
+            <i id="facebook"></i>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="Front-end/JS/test.js"></script>
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <title>Petty</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">  
+    <link rel="stylesheet" href="./asset/css/base.css">
+    <link rel="stylesheet" href="./asset/css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="../Front-end/asset/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../Front-end/asset/css/owl.theme.default.min.css">
+</head>
+<body>
+    <!--Header-->
+    <div class="container-fluid">
+        <div class="container" id="petty-header" style="width: 100%; height: 100%;">
+            <div class="logo"></div>
+            <form class="search" action="search.php" method="GET">
+                <input class="txtSearch" type="text" placeholder="Tìm kiếm">
+                <button type="submit" id="btnSearch" onclick="window.location.href = 'search.html';"><i id="search-icon"></i></button>
+            </form>
+            <span><i class="fas fa-bell" style="color: white; position: absolute; right: 334px; font-size: 20px; top: 19px;"></i></span>
+            <div class="user">
+                <span style="color: white; margin-right: 10px;">ecchi123</span>
+                <img class="rounded-circle" src="https://static.wikia.nocookie.net/a3dddab1-5138-4786-ad66-03920667dc3a" style="width: 45px; height: auto; border: 1px solid #ef5030;">
+                <i class="fas fa-caret-down"></i>
+            </div>
+            <div class="cart">
+                <i></i>
+                <span>Giỏ hàng</span>
+            </div>
+        </div>
+    </div>
+    <!--Menu-->
+    <div class="catalog">
+        <div class="item-catalog home">Trang chủ</div>
+        <div class="item-catalog">Giới thiệu</div>
+        <div class="item-catalog">Dịch vụ</div>
+        <div class="item-catalog">Liên hệ</div>
+        <div class="item-catalog">Blog</div>
+    </div>
+    <!--Content-->
+    <div class="content" style="min-height: 300px;">
+        <div class="title-image-cart" style="position: relative;">
+            <p>Giỏ hàng của tôi</p>
+        </div>
+        <div class="home-cart" style="padding: 20px;">
+            <div class="detail-cart">Giỏ hàng</div>
+            <div class="productInCart">
+                <div class="row heading">
+                    <div class="col-7 product-name-title">Sản phẩm</div> 
+                    <div class="col product-price-title">Giá</div>
+                    <div class="col product-quantity-title">Số lượng</div>
+                    <div class="col-1 product-subtotal-title">Tạm tính</div>
+                </div>
+                <!--Một hàng sản phẩm-->
+                <div class="row">
+                    <div class="col-1 product-image">
+                        <i class="far fa-times-circle"></i>
+                        <a href="#demo"><img style="width: 100px; height: 100px;" src="https://www.petmart.vn/wp-content/uploads/2018/12/thuc-an-cho-cho-con-royal-canin-x-small-puppy-768x768.jpg"></a>
+                    </div>
+                    <div class="col-6 product-name">
+                        <a href="#demo">Thức ăn cho chó con Royal Canin X-Small Puppy</a><br>
+                        <div class="btn btn-link shop-next-time">Mua sau</div>
+                    </div>
+                    <div class="col product-price">90.000đ</div>
+                    <div class="col product-quantity">
+                        <div class="input-group quantity-block">
+                            <span class="input-group-btn left">
+                                <button type="button" class="quantity-left-minus btn">
+                                    <i class="fas fa-minus">
+                                    </i>
+                                </button>
+                            </span>
+                            <input type="text" id="quantity" class="form-control input-number" value="1" min="1" max="100" style="text-align: center;">
+                            <span class="input-group-btn right">
+                                <button type="button" class="quantity-right-plus btn">
+                                    <i class="fas fa-plus">
+                                    </i>
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-1 product-subtotal">90.000đ</div>
+                </div>
+                <!--Hết 1 hàng sản phẩm-->
+                <div class="row">
+                    <div class="col-1 product-image">
+                        <i class="far fa-times-circle"></i>
+                        <a href="#demo"><img style="width: 100px; height: 100px;" src="https://www.petmart.vn/wp-content/uploads/2018/12/thuc-an-cho-cho-con-royal-canin-x-small-puppy-768x768.jpg"></a>
+                    </div>
+                    <div class="col-6 product-name">
+                        <a href="#demo">Thức ăn cho chó con Royal Canin X-Small Puppy</a><br>
+                        <div class="btn btn-link shop-next-time">Mua sau</div>
+                    </div>
+                    <div class="col product-price">90.000đ</div>
+                    <div class="col product-quantity">
+                        <div class="input-group quantity-block">
+                            <span class="input-group-btn left">
+                                <button type="button" class="quantity-left-minus btn">
+                                    <i class="fas fa-minus">
+                                    </i>
+                                </button>
+                            </span>
+                            <input type="text" id="quantity" class="form-control input-number" value="1" min="1" max="100" style="text-align: center;">
+                            <span class="input-group-btn right">
+                                <button type="button" class="quantity-right-plus btn">
+                                    <i class="fas fa-plus">
+                                    </i>
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-1 product-subtotal">90.000đ</div>
+                </div>
+                <div class="row">
+                    <div class="col-1 product-image">
+                        <i class="far fa-times-circle"></i>
+                        <a href="#demo"><img style="width: 100px; height: 100px;" src="https://www.petmart.vn/wp-content/uploads/2018/12/thuc-an-cho-cho-con-royal-canin-x-small-puppy-768x768.jpg"></a>
+                    </div>
+                    <div class="col-6 product-name">
+                        <a href="#demo">Thức ăn cho chó con Royal Canin X-Small Puppy</a><br>
+                        <div class="btn btn-link shop-next-time">Mua sau</div>
+                    </div>
+                    <div class="col product-price">90.000đ</div>
+                    <div class="col product-quantity">
+                        <div class="input-group quantity-block">
+                            <span class="input-group-btn left">
+                                <button type="button" class="quantity-left-minus btn">
+                                    <i class="fas fa-minus">
+                                    </i>
+                                </button>
+                            </span>
+                            <input type="text" id="quantity" class="form-control input-number" value="1" min="1" max="100" style="text-align: center;">
+                            <span class="input-group-btn right">
+                                <button type="button" class="quantity-right-plus btn">
+                                    <i class="fas fa-plus">
+                                    </i>
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-1 product-subtotal">90.000đ</div>
+                </div>
+            </div>
+            <div class="checkout-card row">
+                <div class="col-5" style="padding: 10px;" role="form">
+                    <label>Mã giảm giá</label>
+                    <input type="text" class="coupon-code">
+                    <button type="submit" class="accept-coupon">Đồng ý</button>
+                </div>
+                <div class="col"></div>
+                <div class="col-1">
+                    Thành tiền:
+                </div>
+                <div class="col">
+                    <h2 class="submoney" style="color: #ef5030;">1.990.000đ</h2>
+                </div>
+                <div class="col">
+                    <button style="width: 170px; padding: 12px; background-color: #ef5030; border: none; border-radius: 5px; color: #fff;">Mua hàng</button>
+                </div>
+                
+            </div>
+            <button class="continue-shop"><i class="fas fa-long-arrow-alt-left"></i>Tiếp tục xem hàng</button>
+        </div>
+    </div>
+    <!--Footer-->
+    <div class="container-fluid" style="background-color: #f19f1f; height: 200px;">
+    <div class="footer">
+        <div id="petty-logo"></div>
+        <div class="information">
+            <p><i id="mobile"></i>000-000-000</p>
+            <p><i id="email"></i>Email: nnchi@gmail.com</p>
+            <p><i id="address"></i>144, Xuan Thuy, Cau Giay, Ha Noi</p>
+        </div>
+        <div class="media">
+            <p class="media-text">Follow Us</p>
+            <i id="facebook"></i>
+        </div>
+    </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="JS/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

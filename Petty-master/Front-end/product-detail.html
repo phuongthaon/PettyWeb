@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <title>Petty</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">  
+    <link rel="stylesheet" href="./asset/css/base.css">
+    <link rel="stylesheet" href="./asset/css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="../Front-end/asset/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../Front-end/asset/css/owl.theme.default.min.css">
+</head>
+<body>
+    <!--Header-->
+    <div class="container-fluid">
+        <div class="container" id="petty-header" style="width: 100%; height: 100%;">
+            <div class="logo"></div>
+            <form class="search" action="search.php" method="GET">
+                <input class="txtSearch" type="text" placeholder="Tìm kiếm">
+                <button type="submit" id="btnSearch" onclick="window.location.href = 'search.html';"><i id="search-icon"></i></button>
+            </form>
+            <span><i class="fas fa-bell" style="color: white; position: absolute; right: 334px; font-size: 20px; top: 19px;"></i></span>
+            <div class="user">
+                <span style="color: white; margin-right: 10px;">ecchi123</span>
+                <img class="rounded-circle" src="https://static.wikia.nocookie.net/a3dddab1-5138-4786-ad66-03920667dc3a" style="width: 45px; height: auto; border: 1px solid #ef5030;">
+                <i class="fas fa-caret-down"></i>
+            </div>
+            <a href="cart.html">
+                <div class="cart">
+                    <i></i>
+                    <span>Giỏ hàng</span>
+                    <div class="product-count">3</div>
+                </div>
+            </a>
+        </div>
+        <div class="container" style="position: relative;">
+            <div class="toast" data-autohide="false" style="position: absolute; right: 0px;">
+                <div class="toast-header">
+                    <span class="fas fa-check-circle mr-2 text-success"></span>
+                    <strong class="mr-auto text-success">Thêm vào giỏ hàng thành công!</strong>
+                    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast">&times;</button>
+                </div>
+                <div class="toast-body" style="text-align: center;">
+                    <a href="cart.html"><button>Xem giỏ hàng và thanh toán</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Menu-->
+    <div class="catalog">
+        <div class="item-catalog home">Trang chủ</div>
+        <div class="item-catalog">Giới thiệu</div>
+        <div class="item-catalog">Dịch vụ</div>
+        <div class="item-catalog">Liên hệ</div>
+        <div class="item-catalog">Blog</div>
+    </div>
+    <!--Content-->
+    <div class="product-detail-page content container" style="min-height: 300px;">
+        <h3 class="title-catalog">Danh mục</h3>
+        <div class="view-product">
+            <div class="product-image">
+                <img src="https://www.petmart.vn/wp-content/uploads/2015/12/pate-cho-meo-vi-chai-bien-tuna-mussel.jpg">
+            </div>
+            <div class="product-detail">
+                <div class="product-name">
+                    <h3>Pate cho mèo vị trai biển CatSeaFish Tuna With Mussel</h3>
+                </div>
+                <div class="product-status">
+                    <div class="rating">
+                        <span class="level">5.0</span>
+                        <span class="label">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </span>
+                    </div>
+                    <div class="number-of-rating"><a href="#demo">100 <span>đánh giá</span></a></div>
+                </div>
+                <div class="product-price">
+                    <h2>490.000đ</h2>
+                </div>
+                <div class="product-description">
+                    <p>
+                         <span style="font-family: 'My Font Paragraph Bold';">Thương hiệu: </span>
+                        <span>Ecchi</span>
+                    </p>    
+                   <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                        Odio molestiae ut porro ab. Molestiae labore quos, ea odio 
+                        illo facere totam fuga quaerat atque blanditiis doloribus, 
+                        sed consequatur placeat repellendus.
+                   </p>
+                </div>
+                <div class="product-quantity">
+                    <div class="input-group quantity-block">
+                        <span class="left" style="border: 1px solid #ccc; border-top-left-radius: 5px; border-bottom-left-radius: 5px;">
+                            <button type="button" class="quantity-left-minus btn">
+                                <i class="fas fa-minus">
+                                </i>
+                            </button>
+                        </span>
+                        <input type="text" id="quantity" class="input-number" value="1" min="1" max="100" style="text-align: center; width: 50px;">
+                        <span class="right" style="border: 1px solid #ccc; border-top-right-radius: 5px; border-bottom-right-radius: 5px;">
+                            <button type="button" class="quantity-right-plus btn">
+                                <i class="fas fa-plus">
+                                </i>
+                            </button>
+                        </span>
+                    </div>
+                </div>
+                <div class="add-cart" style="margin-top: 20px;">
+                    <button type="submit" id="addcart">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span>Chọn mua</span>
+                    </button>
+                    <span class="add-wishlist">
+                        <i class="far fa-heart"></i>
+                    </span>
+                </div>
+            </div>
+       </div>
+       <div class="detailed-description">
+            <h3 class="title">Mô tả sản phẩm</h3>
+            <div class="text">
+                Đồ Ăn Cho Mèo Trưởng Thành Me-O Hương Vị Cá Ngừ (1.2 Kg) giúp bạn tiết kiệm được 
+                thời gian và chi phí khi mua sắm. Công thức Flutd giúp ngăn ngừa bệnh đường tiết niệu 
+                trên mèo và sỏi bàng quang, cho mèo của bạn có được sức khoẻ tốt và sự nhanh nhạy. Sản 
+                phẩm xuất xứ từ Thái Lan, được nhiều người tiêu dùng tin tưởng và lựa chọn.
+            </div>
+       </div>
+       <!--Phần review của khách hàng-->
+       <div class="customer-review">
+            <h3 class="title">Nhận xét của khách hàng</h3>
+            <div class="rating-overview row shadow">
+                <div class="rating-average col-3" style="padding: 30px;">
+                    <p>Đánh giá trung bình</p>
+                    <h1 style="color: #ef5030;">5/5</h1>
+                    <span class="label">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </span>
+                </div>
+                <div class="rating-percentage col-5">
+                    <div class="rate-item rate-5">
+                        <div class="rating-num" style="margin-right: 5px;">5<i class="fas fa-star"></i></div>
+                        <div class="progress" style="width: 300px;">
+                            <div class="progress-bar" style="width:70%">70%</div>
+                        </div>
+                    </div>
+                    <div class="rate-item rate-4">
+                        <div class="rating-num" style="margin-right: 5px;">4<i class="fas fa-star"></i></div>
+                        <div class="progress" style="width: 300px;">
+                            <div class="progress-bar" style="width:70%">70%</div>
+                        </div>
+                    </div>
+                    <div class="rate-item rate-3">
+                        <div class="rating-num" style="margin-right: 5px;">3<i class="fas fa-star"></i></div>
+                        <div class="progress" style="width: 300px;">
+                            <div class="progress-bar" style="width:70%">70%</div>
+                        </div>
+                    </div>
+                    <div class="rate-item rate-5">
+                        <div class="rating-num" style="margin-right: 5px;">2<i class="fas fa-star"></i></div>
+                        <div class="progress" style="width: 300px;">
+                            <div class="progress-bar" style="width:70%">70%</div>
+                        </div>
+                    </div>
+                    <div class="rate-item rate-5">
+                        <div class="rating-num" style="margin-right: 5px;">1<i class="fas fa-star"></i></div>
+                        <div class="progress" style="width: 300px;">
+                            <div class="progress-bar" style="width:15%">0%</div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="sharing-comment col">
+                    <p>Chia sẻ nhận xét của bạn</p>
+                    <!--Button để mở modal nhận xét-->
+                    <button data-toggle="modal" data-target="#comment-modal">Viết nhận xét của bạn</button>
+                </div>
+            </div>
+
+            <div class="product-review-box" style="padding: 20px;">
+                <div class="review-filter">
+                    <form>
+                        <label for="filter" class="mr-3 ml-5">Chọn xem nhận xét</label>
+                        <select id="filter" style="width: 200px; height: 30px; border-radius: 5px;">
+                            <option value="all">Tất cả</option>
+                            <option value="5sao">5 sao</option>
+                            <option value="4sao">4 sao</option>
+                            <option value="3sao">3 sao</option>
+                            <option value="2sao">2 sao</option>
+                            <option value="1sao">1 sao</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="item-review row" style="padding: 20px;">
+                    <div class="col-2" style="text-align: center;">
+                        <img src="../Front-end/asset/resource/img/avatar.jpg" class="rounded-circle" style="width: 80px;">
+                        <div class="customer-name">Nguyễn Ngọc Chi</div>
+                        <div class="posted-time">2 tháng trước</div>
+                    </div>
+                    <div class="col review-description">
+                        <div>
+                            <span class="label">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </span>
+                            <span class="ml-2">Hài lòng</span>
+                        </div>
+                        <div style="color: #ccc;"><i>Đã mua sản phẩm</i></div>
+                        <div>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Eos aut praesentium voluptatem expedita maiores. Maiores 
+                            quos tempora accusantium dolorem in, magni tenetur, ea deleniti 
+                            voluptas aperiam, ullam laudantium exercitationem eum.
+                        </div>
+                    </div>
+                </div>
+                <div class="item-review row" style="padding: 20px;">
+                    <div class="col-2" style="text-align: center;">
+                        <img src="../Front-end/asset/resource/img/avatar.jpg" class="rounded-circle" style="width: 80px;">
+                        <div class="customer-name">Nguyễn Ngọc Chi</div>
+                        <div class="posted-time">2 tháng trước</div>
+                    </div>
+                    <div class="col review-description">
+                        <div>
+                            <span class="label">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </span>
+                            <span class="ml-2">Hài lòng</span>
+                        </div>
+                        <div style="color: #ccc;"><i>Đã mua sản phẩm</i></div>
+                        <div>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Eos aut praesentium voluptatem expedita maiores. Maiores 
+                            quos tempora accusantium dolorem in, magni tenetur, ea deleniti 
+                            voluptas aperiam, ullam laudantium exercitationem eum.
+                        </div>
+                    </div>
+                </div>
+                <div class="item-review row" style="padding: 20px;">
+                    <div class="col-2" style="text-align: center;">
+                        <img src="../Front-end/asset/resource/img/avatar.jpg" class="rounded-circle" style="width: 80px;">
+                        <div class="customer-name">Nguyễn Ngọc Chi</div>
+                        <div class="posted-time">2 tháng trước</div>
+                    </div>
+                    <div class="col review-description">
+                        <div>
+                            <span class="label">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </span>
+                            <span class="ml-2">Hài lòng</span>
+                        </div>
+                        <div style="color: #ccc;"><i>Đã mua sản phẩm</i></div>
+                        <div>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Eos aut praesentium voluptatem expedita maiores. Maiores 
+                            quos tempora accusantium dolorem in, magni tenetur, ea deleniti 
+                            voluptas aperiam, ullam laudantium exercitationem eum.
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </div>
+       <!--Đây là modal cho comment-->
+       <div class="modal fade" id="comment-modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+      
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Viết nhận xét</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+      
+            <!-- Modal body -->
+            <div class="modal-body">
+              <form>
+                <label for="star-rating" style="margin-right: 10px;">1.Đánh giá của bạn về sản phẩm này: </label>
+                <span>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </span>
+                <br>
+                <label for="comment-heading">2.Tiêu đề của nhận xét: </label>
+                <input class="form-control" type="text" placeholder="Tiêu đề..."></input><br>
+                <label for="comment">3.Viết nhận xét của bạn bên dưới:</label>
+                <textarea class="form-control" rows="5" id="comment" placeholder="Viết nhận xét của bạn ở đây..."></textarea>
+              </form>
+            </div>
+      
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn" data-dismiss="modal" style="background-color: #f19f1f; color: #fff;">Gửi nhận xét</button>
+            </div>
+      
+          </div>
+        </div>
+      </div>
+       <!--Hết phần review của khách hàng-->
+       <!--Phần sản phẩm liên quan-->
+       <!--Chỗ này cho hiện 4 sản phẩm liên quan nhất thôi, nhiều hơn thì bấm xem thêm-->
+       <div class="related-products" style="position: relative;">
+            <h3 class="title related-title m-4">Sản phẩm liên quan</h3>
+            <div class="row">
+                <!--Một ô sản phẩm tương ứng với một cái div có class col-md-3 col-sm-6-->
+                <div class="col-md-3 col-sm-6">
+                    <div class="product-grid">
+                        <div class="product-image">
+                            <a href="#" class="image">
+                                <img class="pic-1" src="../Front-end/asset/resource/img/Cat.jpg">
+                                <img class="pic-2" src="../Front-end/asset/resource/img/Cat.jpg">
+                            </a>
+                            <!--Khi nào sản phẩm ý có khuyến mãi thì thêm cái span này-->
+                            <span class="product-discount-label">-33%</span>
+                        </div>
+                        <div class="product-content">
+                            <ul class="rating">
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star disable"></li>
+                            </ul>
+                            <h3 class="title"><a href="#">Mèo Hoàng gia</a></h3>
+                            <!--Nếu có khuyến mãi thì thêm một span bên cạnh giá gốc-->
+                            <div class="price">$20.00<span>$30.00</span></div>
+                            <ul class="social">
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-eye"></i></a></li>
+                                <li><a href="#"><i class="fa fa-random"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="product-grid">
+                        <div class="product-image">
+                            <a href="#" class="image">
+                                <img class="pic-1" src="../Front-end/asset/resource/img/BlackPug.jpg">
+                                <img class="pic-2" src="../Front-end/asset/resource/img/BlackPug.jpg">
+                            </a>
+                        </div>
+                        <div class="product-content">
+                            <ul class="rating">
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star disable"></li>
+                                <li class="fa fa-star disable"></li>
+                            </ul>
+                            <h3 class="title"><a href="#">Chó Pug Đen</a></h3>
+                            <div class="price">$29.00</div>
+                            <ul class="social">
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-eye"></i></a></li>
+                                <li><a href="#"><i class="fa fa-random"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>  
+                </div>
+                <!--Thêm hàng mới ở đây-->
+                <div class="col-md-3 col-sm-6">
+                    <div class="product-grid">
+                        <div class="product-image">
+                            <a href="#" class="image">
+                                <img class="pic-1" src="../Front-end/asset/resource/img/BlackPug.jpg">
+                                <img class="pic-2" src="../Front-end/asset/resource/img/BlackPug.jpg">
+                            </a>
+                        </div>
+                        <div class="product-content">
+                            <ul class="rating">
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star disable"></li>
+                                <li class="fa fa-star disable"></li>
+                            </ul>
+                            <h3 class="title"><a href="#">Chó Pug Đen</a></h3>
+                            <div class="price">$29.00</div>
+                            <ul class="social">
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-eye"></i></a></li>
+                                <li><a href="#"><i class="fa fa-random"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>  
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="product-grid">
+                        <div class="product-image">
+                            <a href="#" class="image">
+                                <img class="pic-1" src="https://salt.tikicdn.com/cache/200x200/media/catalog/product/1/2/12--beef-_-lamb-400g.u4064.d20170514.t150635.313880.jpg?fbclid=IwAR3T6Gcp1VTl1Do_atFbJ8suizg1M1vc-kp6Q1T7BsTzvyjwNxB91ZTv6rU">
+                                <img class="pic-2" src="https://salt.tikicdn.com/cache/200x200/media/catalog/product/1/2/12--beef-_-lamb-400g.u4064.d20170514.t150635.313880.jpg?fbclid=IwAR3T6Gcp1VTl1Do_atFbJ8suizg1M1vc-kp6Q1T7BsTzvyjwNxB91ZTv6rU">
+                            </a>
+                        </div>
+                        <div class="product-content">
+                            <ul class="rating">
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star"></li>
+                                <li class="fa fa-star disable"></li>
+                                <li class="fa fa-star disable"></li>
+                            </ul>
+                            <h3 class="title"><a href="#">Chó Pug Đen</a></h3>
+                            <div class="price">$29.00</div>
+                            <ul class="social">
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-eye"></i></a></li>
+                                <li><a href="#"><i class="fa fa-random"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>  
+                </div>
+                
+            </div>
+            <!--Chỗ hiện mặt hàng-->
+            <form class="more"><button type="button">Xem thêm</button></form>
+       </div> 
+    </div>
+
+    <!--Footer-->
+    <div class="footer">
+        <div id="petty-logo"></div>
+        <div class="information">
+            <p><i id="mobile"></i>000-000-000</p>
+            <p><i id="email"></i>Email: nnchi@gmail.com</p>
+            <p><i id="address"></i>144, Xuan Thuy, Cau Giay, Ha Noi</p>
+        </div>
+        <div class="media">
+            <p class="media-text">Follow Us</p>
+            <i id="facebook"></i>
+        </div>
+    </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="JS/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#addcart').click(function(){
+                $('.toast').toast('show');
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }) 
+        });
+    </script>
+</body>
+</html>

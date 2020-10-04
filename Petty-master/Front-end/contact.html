@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <title>Petty</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">  
+    <link rel="stylesheet" href="./asset/css/base.css">
+    <link rel="stylesheet" href="./asset/css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="../Front-end/asset/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../Front-end/asset/css/owl.theme.default.min.css">
+</head>
+<body>
+    <!--Header-->
+    <div class="container-fluid">
+        <div class="container" id="petty-header" style="width: 100%; height: 100%;">
+            <div class="logo"></div>
+            <form class="search" action="search.php" method="GET">
+                <input class="txtSearch" type="text" placeholder="Tìm kiếm">
+                <button type="submit" id="btnSearch" onclick="window.location.href = 'search.html';"><i id="search-icon"></i></button>
+            </form>
+            <span><i class="fas fa-bell" style="color: white; position: absolute; right: 334px; font-size: 20px; top: 19px;"></i></span>
+            <div class="user">
+                <span style="color: white; margin-right: 10px;">ecchi123</span>
+                <img class="rounded-circle" src="https://static.wikia.nocookie.net/a3dddab1-5138-4786-ad66-03920667dc3a" style="width: 45px; height: auto; border: 1px solid #ef5030;">
+
+                <i type="button" class="fas fa-caret-down"></i>
+            </div>
+            <div class="cart">
+                <i></i>
+                <span>Giỏ hàng</span>
+            </div>
+        </div>
+    </div>
+    <!--Menu-->
+    <div class="catalog">
+        <div class="item-catalog home">Trang chủ</div>
+        <div class="item-catalog about-petty">Giới thiệu</div>
+        <div class="item-catalog online-shopping">Mua hàng online</div>
+        <div class="item-catalog dropdown service">
+            <div type="button" class="btn dropdown-toggle" data-toggle="dropdown" style="color: #fff;">
+                Dịch vụ
+            </div>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Dịch vụ chung</a>
+                <a class="dropdown-item" href="#">Dịch vụ cho chó</a>
+                <a class="dropdown-item" href="#">Dịch vụ cho mèo</a>
+                <a class="dropdown-item" href="#">Dịch vụ cho các thú cưng khác</a>
+            </div>   
+        </div>
+        <div class="item-catalog">Liên hệ</div>
+        <div class="item-catalog">Blog</div>
+    </div>
+    <!--Content-->
+    <div class="content container about-page" style="min-height: 500px;">
+        <div style="text-align: center;">
+            <h3 class="title-about" style="font-size: 40px;"><span class="fas fa-paw"></span>Liên hệ với chúng tôi<span class="fas fa-paw"></span></h3>
+        </div>
+        <div class="underline"></div>
+        <div class="serviceline-overview" >
+            <!--chỗ này ảnh của nhóm dịch vụ: nếu là mèo thì thay mèo, chó thì thay chó, chung thì thay hình chung-->
+            <div class="img-serviceline" style="background-image: url('https://images.unsplash.com/photo-1507682520764-93440a60e9b5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1525&q=80');"></div>
+            <div class="description-serviceline">
+                <h3>Thông tin liên lạc</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit fuga, 
+                    et fugit vel officia eius natus unde repudiandae quaerat quisquam 
+                    veritatis consectetur, deserunt quasi quia veniam dolores voluptatibus, consequatur quidem.
+                </p>
+                <ul style="display: block; text-align: center;" class="list">
+                    <!--Chỗ list này thì tùy nhóm dịch vụ sẽ có những list nào-->
+                    <li style="font-size: 30px; font-family: 'My Font Paragraph';">
+                        <div class="mobile-information fas fa-phone-volume" style="margin-right: 10px; color: #108896;"></div>
+                        <span style="color: #333;">012.345.678</span>
+                    </li>
+                    <li style="font-size: 30px; font-family: 'My Font Paragraph';"> 
+                        <div class="email-information fas fa-envelope" style="margin-right: 10px; color: #108896;"></div>
+                        <span style="color: #333;">nnchi@gmail.com</span>
+                    </li>
+                    <li style="font-size: 30px; font-family: 'My Font Paragraph';">
+                        <div class="location-information fas fa-compass" style="margin-right: 10px; color: #108896;"></div>
+                        <span style="color: #333;">143 Xuan Thuy, Cau Giay, Ha Noi</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+    <!--Footer-->
+    <div class="footer">
+        <div id="petty-logo"></div>
+        <div class="information">
+            <p><i id="mobile"></i>000-000-000</p>
+            <p><i id="email"></i>Email: nnchi@gmail.com</p>
+            <p><i id="address"></i>144, Xuan Thuy, Cau Giay, Ha Noi</p>
+        </div>
+        <div class="media">
+            <p class="media-text">Follow Us</p>
+            <i id="facebook"></i>
+        </div>
+    </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="JS/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
