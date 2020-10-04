@@ -1,0 +1,22 @@
+:root{
+    --white-color: #fff;
+    --black-color: #fff;
+    --text0color: #333;
+}
+*{
+    box-sizing: inherit;
+}
+html{
+    box-sizing: border-box;
+}
+.grid{
+    width: 1200px;
+    max-width: 100%;
+}
+.grid__full-width{
+    width: 100%;
+}
+.grid row{
+    display: flex;
+    flex-wrap: wrap;
+}

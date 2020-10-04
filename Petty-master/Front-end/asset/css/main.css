@@ -1,0 +1,1189 @@
+/*Test thử*/
+/* Chrome, Safari, Edge, Opera */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+/* Firefox */
+
+/*
+css chung cho các trang
+*/
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'My Font Regular', sans-serif;
+    position: relative;
+    min-height: 100%;
+}
+@font-face{
+    font-family: My Font Regular;
+    src: url("../resource/fonts/Baloo_Bhai_2/BalooBhai2-Regular.ttf");
+}
+@font-face{
+    font-family: My Font Bold;
+    src: url("../resource/fonts/Baloo_Bhai_2/BalooBhai2-Bold.ttf");
+}
+@font-face{
+    font-family: My Font Paragraph;
+    src: url("../resource/fonts/Roboto/Roboto-Regular.ttf")
+}
+@font-face{
+    font-family: 'My Font Paragraph Bold';
+    src: url("../resource/fonts/Roboto/Roboto-Bold.ttf")
+}
+/* CSS cho index.html */
+/*Header*/
+
+.container-fluid {
+    height: 60px;
+    width: 100%;
+    background-color: #f19f1f;
+}
+#petty-header{
+    position: relative;
+    padding-top: 9px;
+}
+.logo {
+    top: 0px;
+    position: absolute;
+    left: 10px;
+    height: 60px;
+    width: 60px;
+    background-image: url("../resource/icon/logo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+}
+.search{
+    display: flex;
+    position: absolute;
+    left: 100px;
+    top: 10px;
+}
+.txtSearch {
+    width:500px; 
+    height:40px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: none;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+#btnSearch{
+    border: none;
+    background-color: #ef5030;
+    color: #fff;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+#search-icon{
+    display: block;
+    background-image: url("../resource/icon/search.png");
+    background-size: 15px;
+    background-repeat: no-repeat;
+}
+#btnSearch:hover{
+    background-color: #108896;
+    cursor: pointer;
+}
+#search-icon{
+    width: 16px;
+    height: 16px;
+    background-image: url("../resource/icon/search.png");
+}
+.cart {
+    display: flex;
+    position: absolute;
+    right: 0px;
+    width: 150px;
+    height: 40px;
+    border: 2px solid #fff;
+    border-radius: 3px;
+    padding: 9px;
+    box-sizing: border-box;
+    align-items: center;
+}
+.cart i{
+    width: 20px;
+    height: 20px;
+    background-image: url("../resource/icon/smart-cart.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+}
+.cart span{
+    color: #fff;
+    font-family: 'My Font Bold';
+    margin-left: 10px;
+}
+.cart .product-count{
+    background-color: #ffefd5; 
+    width: 24px; 
+    text-align: center; 
+    margin-left: 5px;
+    border-radius: 5px;
+    color: #333;
+}
+.user {
+    position: absolute;
+    right: 175px;
+}
+.fas.fa-caret-down{
+    font-size: 15px;
+    color: white;
+}
+.catalog {
+    justify-content: center;
+    /* border-top: 1px solid #ccc; */
+    width: 100%;
+    display: flex;
+    background-color: #f19f1f;
+    height: 50px;
+    flex-wrap: nowrap;
+}
+.item-catalog{
+    height: 100%;
+    padding: 10px;
+    font-family: 'My Font Bold', sans-serif;
+    color: #fff;
+    box-sizing: border-box;
+    line-height: 30px;
+    vertical-align: middle;
+    transition: background-color 0.5s;
+}
+.item-catalog:focus{
+    background-color: #ef5030;
+}
+.item-catalog:hover{
+    background-color: #ef5030;
+    cursor: pointer;
+}
+.content{
+    font-family: 'My Font Paragraph';
+}
+
+.content .item {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+/*Style cho slide*/
+.carousel-item {
+    min-height: 600px;
+    background: no-repeat center center scroll;
+    background-size: cover;
+}
+.carousel-item img{
+    width: 100%;
+    height: auto;
+}
+.owl-theme .owl-dots .owl-dot.active span{
+    background-color: #ef5030!important;
+}
+
+.owl-carousel .prev-slide{
+    position: absolute;
+    left: 5px;
+    top: 194px;
+    font-size: 2rem;
+    color: #ef5030;
+}
+.owl-carousel .next-slide{
+    position: absolute;
+    right: 5px;
+    font-size: 2rem;
+    top: 194px;
+    color: #ef5030;
+}
+/*----------------------------*/
+.sale-product-title{
+    font-family: 'My Font Bold';
+    color: #108896;
+}
+.content .item.service{
+    position: relative;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 100%;
+}
+.content .item.service .title{
+    font-family: 'My Font Bold', sans-serif;
+    font-size: 50px;
+    color: #108896;
+    margin: 50px;
+}
+.content .item.service .service-description{
+    width: 700px;
+    text-align: center;
+    color: #989797;
+}
+.content .item.service .service-list{
+    flex-wrap: nowrap;
+    margin: 40px;
+}
+.content .item.service .service-list .service-item{
+    height: 600px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: #ffefd5;
+}
+button.more-info{
+    width: 100px;
+    height: 40px;
+    position: absolute;
+    bottom: 5px;
+    font-family: 'My Font Bold';
+    background-color: #ef5030;
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    color: #fff;
+    box-sizing: border-box;
+    transition: background-color 0.5s;
+}
+button.more-info:hover{
+    background-color: #108896;
+    cursor: pointer;
+}
+.vet .service-image{
+    background-image: url("https://images.unsplash.com/photo-1494256997604-768d1f608cac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=801&q=80");
+}
+.great-products .service-image{
+    background-image: url("https://images.unsplash.com/photo-1507146426996-ef05306b995a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
+}
+.hotel .service-image{
+    background-image: url("https://images.unsplash.com/photo-1554693190-383dd5302125?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80");
+}
+.dog-walking .service-image{
+    background-image: url("https://images.unsplash.com/photo-1501720804996-ae418d1ba820?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1945&q=80");
+}
+
+.service-image{
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    background-image: url("https://images.unsplash.com/photo-1490650034439-fd184c3c86a5?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80");
+    background-size: cover;
+}
+.service-title{
+    font-size: 1.5rem;
+    margin-top: 10px;
+    font-family: 'My Font Bold', sans-serif;
+    color: #292929;
+}
+.service-description-sub{
+    color: #989797;
+}
+
+
+.sale {
+    /* width: calc(100% - 50%); */
+    width: 100%;
+    padding: 10px;
+}
+/*---------------------------------------*/
+/*css cho phần about us*/
+.about .card-header{
+    min-width: 498px;
+    background-color: #ef5030;
+    border: none;
+    text-align: center;
+    font-family: 'My Font Bold';
+    transition: background-color 0.5s;
+}
+.card-header a{
+    color: #fff;
+}
+.panel.card{
+    margin-bottom: 20px;
+    border: none;
+}
+.about .card-header:hover{
+    background-color: #108896;
+    cursor: pointer;
+}
+/*CSS cho phần mấy list icon ở dưới*/
+.dog-and-pet-house{
+    background-image: url("../resource/icon/dog-and-pets-house.png");
+}
+.high-quality{
+    background-image: url("../resource/icon/dog\ play.png");
+}
+.vet-services{
+    background-image: url("../resource/icon/vetService\ hover\ \ \(2\).png");
+}
+.special-care{
+    background-image: url("../resource/icon/dog-having-a\ bath.png");
+}
+div.rounded-circle{
+    margin-top: 50px;
+    width: 200px; 
+    height: 200px; 
+    background-color: #ffefd5; 
+    position: relative;
+    border: 5px solid #ef5030;
+}
+.rounded-circle .good{
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 120px;
+    height: 120px;
+    position: absolute; 
+    left: 36px; 
+    top: 28px;
+}
+.zoom {
+    padding: 50px;
+    transition: transform .2s; /* Animation */
+    width: 200px;
+    height: 200px;
+}
+.zoom:hover {
+    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    cursor: pointer;
+  }
+.list-about{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    margin: 40px;
+}
+.list-about h4{
+    margin-top: 40px;
+    font-family: 'My Font Bold';
+}
+.list-about p{
+    text-align: center;
+    color: #989797;
+    font-family: 'My Font Paragraph';
+}
+/*---------------------------------------*/
+/*css cho phần feedback*/
+.feedback-item{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.feedback-item p{
+    font-family: 'My Font Bold';
+    color: #333;
+    margin-top: 30px;
+    font-size: 20px;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 0px;
+}
+.feedback-item span{
+    color: #FFC400;
+}
+#feedback.owl-carousel .prev-slide, #feedback.owl-carousel .next-slide{
+    display: none;
+}
+/*css cho chân trang*/
+.footer {
+    display: flex;
+    height: 200px;
+    background-color: #f19f1f;
+    align-items: center;
+    justify-content: center;
+}
+.footer #petty-logo{
+    width: 200px;
+    height: 200px;
+    background-image: url("../resource/icon/logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-right: 30px;
+}
+.footer .information{
+    text-align: center;
+    font-family: 'My Font Paragraph';
+    margin-right: 30px;
+}
+.information i#mobile{
+    display: inline-block;
+    background-image: url("../resource/icon/phone.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+}
+.information i#email{
+    display: inline-block;
+    background-image: url("../resource/icon/envelope.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+}
+.information i#address{
+    display: inline-block;
+    background-image: url("../resource/icon/pin.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+}
+
+.footer .media{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer .media .media-text{
+    font-family: 'My Font Bold';
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+.footer .media #facebook{
+    background-image: url("../resource/icon/facebook.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+}
+.sidebar-item:hover{
+    background-color: #ffefd5;
+    cursor: pointer;
+    border-radius: 5px;
+}
+/*css cho account.html*/
+.userpage-content{
+    display: flex;
+    min-height: 100%;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.userpage-content .userpage-sidebar{
+    width: 250px;
+    height: 100%;
+}
+.userpage-content .user-information{
+    margin-left: 10px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    width: calc(100% - 250px);
+}
+.userpage-sidebar-menu .sidebar-item{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 20px;
+    font-size: 20px;
+    color: #ef5030;
+}
+.userpage-sidebar-menu .sidebar-item i{
+    margin-right: 10px;
+    font-size: 25px;
+}
+.userpage-brief .userpage-brief-right{
+    font-family: 'My Font Paragraph';
+    color: #989797;
+    font-size: 20px;
+}
+.information-header{
+    border-bottom: 1px solid #ccc;
+    font-size: 30px;
+}
+.fill-information{
+    display: flex;
+}
+.fill-information input.not-radio{
+    border: 1px solid #ef5030;
+    background-color: #ffefd5;
+    border-radius: 10px;
+    height: 40px;
+    padding: 10px;
+    width: 500px;
+    margin-bottom: 20px;
+}
+
+.fill-information label.not-radio{
+    color: #989797;
+    font-family: 'My Font Paragraph';
+}
+.fill-information button{
+    border: none;
+    background-color: #ef5030;
+    color: #fff;
+    padding: 10px;
+    width: 70px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.user-information .upload-avatar{
+    width: 400px;
+    height: 250px;
+    margin-left: 40px;
+    border-left: 1px solid #ccc;
+    text-align: center;
+    align-items: center;
+    padding: 40px;
+    margin-top: 30px;
+    position: relative;
+}
+.user-information .upload-avatar .far.fa-images{
+    font-size: 100px;
+    color: #f19f1f;
+    opacity: 0.5;
+}
+.user-information .upload-avatar input{
+    position: absolute;
+    display: block;
+    left: 125px;
+    top: 160px;
+    width: 80px;
+    height: 30px;
+    border: none;
+    background-color: #ef5030;
+    color: #fff;
+    border-radius: 5px;
+}
+.userpage-sidebar{
+    padding-top: 20px;
+}
+.userpage-sidebar .userpage-brief{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+}
+.fas.fa-user{
+    font-size: 35px;
+    margin-right: 10px;
+    color: #f19f1f;
+}
+
+/*Trang tìm kiếm*/
+.container.search-product{
+    min-height: 100%;
+    position: relative;
+    height: 100%;
+    padding: 30px;
+}
+/*Header của trang tìm kiếm (hiện trên đầu mỗi list sản phẩm khi hiện ra)*/
+.header-product{
+    display: flex;
+    position: relative;
+    margin-bottom: 10px;
+    align-items: center;
+}
+.header-product form.order-by{
+    right: 0px;
+    position: absolute;
+}
+.header-product .result-number{
+    position: absolute;
+    right: 300px;
+}
+/*Làm hiệu ứng ứng cho các ô sản phẩm*/
+.product-grid{ font-family: 'My Font Regular', sans-serif; }
+.product-grid .product-image{
+    position: relative;
+    overflow: hidden;
+}
+.product-grid .product-image a.image{ display: block; }
+.product-grid .product-image img{
+    width: 100%;
+    height: auto;
+}
+.product-image .pic-1{
+    backface-visibility: hidden;
+    transition: all 0.5s;
+}
+.product-grid:hover .product-image .pic-1{ opacity: 0; }
+.product-image .pic-2{
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    opacity: 0;
+    transform: scale(0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .3s ease;
+}
+.product-grid:hover .product-image .pic-2{
+    opacity: 1;
+    transform: scale(1);
+}
+.owl-carousel .product-discount-label, .product-grid .product-discount-label{
+    color: #fff;
+    background-color: #f19f1f;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 20px;
+    padding: 3px 8px;
+    border-radius: 4px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    transition:all 0.3s;
+}
+.product-grid .product-content{
+    padding: 7px;
+    position: relative;
+}
+.product-grid .rating{
+    padding: 0;
+    margin: 0 0 12px;
+    list-style: none;
+}
+.product-grid .rating li{
+    color: #FFC400;
+    font-size: 13px;
+    display: inline-block;
+}
+.product-grid .rating li.disable{ color: #dddddd; }
+.product-grid .title{
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: capitalize;
+    display: block;
+    margin: 0 0 10px;
+}
+.product-grid .title a{
+    color: #707070;
+    transition: all 500ms;
+}
+.product-grid .title a:hover{ color: #ff6600; }
+.product-grid .price{
+    color: #108896;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 0 8px;
+    transition: all 0.5s;
+}
+.product-grid .price span{
+    color: #c0c0c0;
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 5px;
+    text-decoration: line-through;
+}
+.product-grid:hover .price{ opacity: 0; }
+.product-grid .social{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+    opacity: 0;
+    position: absolute;
+    bottom: 5px;
+    left: 7px;
+    transition: all 0.5s ease-out;
+}
+.product-grid:hover .social{ opacity: 1; }
+.product-grid .social li{
+    display: inline-block;
+    margin: 0 5px 0 0;
+}
+.product-grid .social li a{
+    color: #fff;
+    background: #ef5030;
+    font-size: 14px;
+    text-align: center;
+    line-height: 35px;
+    width: 35px;
+    height: 35px;
+    border-radius: 4px;
+    display: block;
+    position: relative;
+    transition: all 250ms ease-out;
+}
+.product-grid .social li a:hover{
+    color: #fff;
+    background-color: #ff6600;
+}
+@media only screen and (max-width:990px){
+    .product-grid{ margin-bottom: 40px; }
+}
+/*---------------------------*/
+/*CSS cho giỏ hàng*/
+.detail-cart{
+    font-family: 'My Font Bold';
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+.productInCart{
+    /* background-color: antiquewhite; */
+    padding: 10px;
+}
+.productInCart .row{
+    margin-left: 0px; 
+    margin-right: 0px; 
+    margin-bottom: 10px;
+    border-bottom: 1px solid #c0c0c0; 
+    padding: 10px;
+}
+.productInCart .row.heading{
+    font-family: 'My Font Bold';
+    font-size: 1rem;
+    background-color: #ef5030;
+    padding: 20px;
+    color: #fff;
+    border-bottom: none;
+}
+
+.productInCart .product-quantity-title, .productInCart .product-subtotal-title, .productInCart .product-price-title, .productInCart .product-price{
+    text-align: center;
+}
+.input-group-btn{
+    background-color: #ef5030;
+}
+.input-group-btn button i{
+    color: #fff;
+}
+.input-group-btn.left{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.input-group-btn.right{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.product-name a{
+    color: #333;
+}
+.product-name a:hover{
+    color: #f19f1f;
+}
+.far.fa-times-circle{
+    position: absolute; 
+    left: 0px; 
+    top: 40px; 
+    font-size: 20px; 
+    color:#ccc;
+}
+.far.fa-times-circle:hover{
+    color: #f19f1f;
+    cursor: pointer;
+}
+.content .title-image-cart{
+    width: 100%; 
+    height: 500px; 
+    background-size:cover; 
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    background-image: url('https://images.unsplash.com/photo-1513360371669-4adf3dd7dff8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
+}
+.content .title-image-cart p{
+    color: #fff; 
+    font-family: 'My Font Regular'; 
+    font-size: 3rem; 
+    position: absolute; 
+    top: calc((500px - 72px)/2); 
+    left: calc((100% - 328px)/2);
+}
+.home-cart button.continue-shop{
+    background-color: #fff;
+    border: 2px solid #ef5030;
+    color: #ef5030;
+    font-family: 'My Font Regular';
+    border-radius: 5px;
+    height: 50px;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.home-cart button i.fas.fa-long-arrow-alt-left{
+    margin-right: 10px;
+}
+.home-cart button.continue-shop:hover{
+    color: #fff;
+    background-color: #ef5030;
+}
+.checkout-card{
+    margin-top: 10px;
+    position: sticky; 
+    bottom: 0px;
+    height: 100%;
+}
+.checkout-card.row{
+    margin-left: 0px; 
+    margin-right: 0px;
+    border: 1px solid #dddddd; 
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+.shop-next-time{
+    padding: 0px;
+}
+.checkout-card.row .accept-coupon{
+    border: 1px solid #ff6600;
+    background-color: #ff6600;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px;
+}
+.checkout-card.row .coupon-code{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 0px;
+    padding: 5px;
+}
+/*CSS cho trang chi tiết mặt hàng*/
+.product-detail-page .title-catalog{
+    font-family: 'My Font Regular';
+}
+.product-detail-page .view-product .product-detail .product-name{
+    font-family: 'My Font Regular';
+}
+.view-product{
+    display: flex;
+    padding: 20px;
+}
+.view-product .product-image img{
+    width: 500px;
+    height: 500px;
+}
+.view-product .product-status{
+    display: flex;
+}
+
+.view-product .product-status .rating{
+    margin-right: 20px;
+}
+.view-product .product-status .rating i.fas.fa-star{
+    color: #FFC400;
+}
+
+.view-product .product-status .rating span.level{
+    text-decoration: underline;
+    color: #FFC400;
+    font-size: 20px;
+}
+.view-product .product-status .number-of-rating{
+    font-size: 20px;
+}
+.view-product .product-status .number-of-rating a{
+    color: #333;
+}
+.view-product .product-status .number-of-rating a:hover{
+    text-decoration: unset;
+}
+.view-product .product-status .number-of-rating span{
+    color: #c0c0c0;
+}
+.product-detail-page{
+    padding: 20px;
+}
+.view-product .product-price h2{
+   margin: 10px 0 10px 0;
+   color: #ef5030;
+}
+.add-cart span{
+    margin-left: 10px;
+}
+.add-cart button{
+    padding: 10px; 
+    width: 200px; 
+    border-radius: 5px; 
+    border: none;
+    background-color: #ef5030;
+    color: #fff;
+}
+.add-wishlist i{
+    color: #333;
+    font-size: 25px;
+}
+.add-wishlist i:hover{
+    cursor: pointer;
+    color: #ef5030;
+}
+/*--------------------*/
+/*css cho phần mô tả mặt hàng và phần nhận xét của khách hàng*/
+.title{
+    font-family: 'My Font Regular';
+}
+/*----------------------*/
+/*css cho phần khách hàng nhận xét*/
+.rating-overview{
+    display: flex;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.rating-average{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.rate-item{
+    display: flex; 
+    margin-top: 10px; 
+    align-items: baseline; 
+    justify-content: center;
+}
+.rating-num .fas.fa-star{
+    color: #333;
+}
+.rating-percentage{
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+.progress-bar{
+    background-color: #ef5030;
+}
+.sharing-comment{
+    text-align: center;
+    padding: 20px;
+}
+.sharing-comment button{
+    width: 250px;
+    padding: 5px;
+    border: none;
+    background-color: #f19f1f;
+    color: #333;
+    border-radius: 5px;
+}
+/*css cho phần từng nhận xét cụ thể*/
+.row{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.item-review .customer-name{
+    font-family: 'My Font Paragraph Bold';
+    color: #108896;
+}
+.item-review .posted-time{
+    color: #c0c0c0;
+}
+.review-description .label i{
+    color: #FFC400;
+}
+.customer-review .title{
+    margin-top: 30px;
+}
+/*----------------------*/
+/*css cho sản phẩm liên quan*/
+.related-products .related-title{
+    text-align: center;
+}
+.related-products .more button{
+    margin-left: calc((100% - 88px)/2);
+    background-color: #f19f1f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-family: 'My Font Regular';
+    margin-top:10px;
+}
+/*------*/
+/*css cho phần hộp thoại nhảy ra lúc ấn mua hàng*/
+.toast-body button{
+    border: none;
+    background-color: #ef5030;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+}
+/*css cho trang đăng ký*/
+.item-reg{
+    margin-top: 10px;
+}
+.item-reg .submit, .item-reg .reset{
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px;
+    width: 100px;
+}
+.item-reg .submit{
+    background-color: #f19f1f;
+}
+.item-reg .submit:hover{
+    opacity: 0.8;
+}
+.item-reg .reset{
+    background-color: #108896;
+}
+.item-reg .reset:hover{
+    opacity: 0.8;
+}
+.petty-form .item-reg label{
+    font-family: 'My Font Bold';
+}
+/*css cho dropdown menu ở đầu các trang*/
+.dropdown:hover>.dropdown-menu {
+    display: block;
+  }
+  
+.dropdown>.dropdown-toggle:active {
+/*Without this, clicking will make it sticky*/
+    pointer-events: none;
+}
+.dropdown-item{
+    transition: background-color 0.5s, border-radius 0.5s, color 0.5s;
+}
+.dropdown-item:hover{
+    background-color: #f19f1f;
+    color: #fff;
+    border-radius: 10px;
+}
+.dropdown-menu{
+    padding: 5px;
+}
+/*css cho phần giới thiệu về petty*/
+.title-about{
+    font-family: 'My Font Bold', sans-serif;
+    font-size: 30px;
+    color: #108896;
+}
+.about-logo-petty{
+    height: 200px;
+    width: 200px;
+    background-image: url("../resource/icon/logo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+}
+.underline{
+    background-color: #ff6600;
+    height: 2px;
+    width: 200px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+.about-page{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.item-about{
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.many{
+    background-image: url("../resource/icon/many.png");
+}
+.service-quality{
+    background-image: url("../resource/icon/day.png")
+}
+.advice{
+    background-image: url("../resource/icon/help.png");
+}
+li p{
+    text-align: center;
+    font-family: 'My Font Bold', sans-serif;
+    font-size: 20px;
+}
+.title-about .fas.fa-paw{
+    color: #ef5030;
+}
+.button-group{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.card-img-top{
+    height: 220px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.shop-img{
+    background-image: url("../resource/img/dog-food-eating.jpg");
+}
+.service-img{
+    background-image: url("../resource/img/Hamster.jpg");
+}
+/*css cho phần các nhóm dịch vụ*/
+.serviceline-overview{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.description-serviceline{
+    background-color: #ffefd5;
+    padding: 20px;
+    border-radius: 20px;
+}
+.description-serviceline h3{
+    font-family: 'My Font Bold', sans-serif;
+    text-align: center;
+}
+
+.img-serviceline{
+    height: 400px;
+    width: 1000px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    border-bottom: 10px solid #108896;
+    margin-right: 100px;
+}
+
+.heading-list{
+    background-image: url("../resource/icon/bone.png");
+    width: 50px;
+    height: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 20px;
+}
+.list li{
+    display: flex;
+    align-items: center;
+    font-family: 'My Font Bold', sans-serif;
+    font-size: 20px;
+    color: #108896;
+}
+/*css cho trang đặt lịch*/
+.bookservice{
+    background-image: url('https://pethealth.vn/wp-content/uploads/2018/04/benh-care.jpg');
+    background-size: cover;
+    background-position: center;
+}
